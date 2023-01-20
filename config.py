@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5724307660:AAFv5KUKFwONAyaw4jgSDM_lky1LwuR79Ks")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5961005476:AAFhpYpgDJatzKHzX2ZqgCm36WCbAmi-kJo")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "6216349"))
@@ -12,26 +12,25 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001889004633"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001796296164"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5905492405"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://nkmhjzrkxagxcs:b71e98c0eff615caf97a4916ca8bb8d60538f8375af513a17f2725339b6568a4@ec2-23-22-105-174.compute-1.amazonaws.com:5432/dah643njiqs972")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://cllulscbniargn:3464e46587da34a0029834076ac82ca65c8ffc9f664be0d80c86499bab921c54@ec2-52-73-155-171.compute-1.amazonaws.com:5432/d8ni70ururi6j9")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001754372304"))
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1001304653438"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001567309257"))
-
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001818794505"))
+FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1001618933513"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001502319229"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5905492405 5355178371 5922009716").split()):
+    for x in (os.environ.get("ADMINS", "5922009716 5905492405 5355178371 5295991427").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
