@@ -12,25 +12,25 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001796296164"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001833301203"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5905492405"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://cllulscbniargn:3464e46587da34a0029834076ac82ca65c8ffc9f664be0d80c86499bab921c54@ec2-52-73-155-171.compute-1.amazonaws.com:5432/d8ni70ururi6j9")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001818794505"))
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1001618933513"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001502319229"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001818544930"))
+FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1001537042082"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001854730884"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5922009716 5905492405 5355178371 5295991427").split()):
+    for x in (os.environ.get("ADMINS", "5905492405").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
